@@ -28,6 +28,12 @@ def sumar_elementos(array)
   suma
 end
 
+def promedio(array)
+  suma = sumar_elementos(array)
+  average = suma / array.length
+  average
+end
+
 puts 'Arreglo sin modificar.'
 a = [1, 2, 3, 9, 1, 4, 5, 2, 3, 6, 6]
 print a
@@ -37,4 +43,6 @@ print a
 a = [1, 2, 3, 9, 1, 4, 5, 2, 3, 6, 6]
 puts "\n2. Sumar todos los elementos de un arreglo."
 print sumar_elementos(a)
+puts "\n3. Obtener el promedio del arreglo"
+print promedio(a)
 puts "\n"

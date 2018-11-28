@@ -9,10 +9,32 @@
 # rubocop:enable AsciiComments
 
 def eliminar_pares(array)
+  index = 0
+  while index < array.length
+    if (array[index] % 2).zero?
+      array.slice!(index)
+      index -= 1
+    end
+    index += 1
+  end
+  array
+end
 
+def sumar_elementos(array)
+  suma = 0
+  array.each do |item|
+    suma += array[item]
+  end
+  suma
 end
 
 puts 'Arreglo sin modificar.'
 a = [1, 2, 3, 9, 1, 4, 5, 2, 3, 6, 6]
 print a
-print "\n"
+print "\n1. Eliminar todos los pares del arreglo."
+a = eliminar_pares(a)
+print a
+a = [1, 2, 3, 9, 1, 4, 5, 2, 3, 6, 6]
+puts "\n2. Sumar todos los elementos de un arreglo."
+print sumar_elementos(a)
+puts "\n"

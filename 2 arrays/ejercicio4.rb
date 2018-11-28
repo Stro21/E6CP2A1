@@ -14,8 +14,8 @@ print products
 puts ''
 html = ''
 products.each do |i|
-  html += "<div class='product'>"
-  html += "</div>\n"
+  html += "<div class='product'><p> "
+  html += "</p></div>\n"
 end
 
 puts html

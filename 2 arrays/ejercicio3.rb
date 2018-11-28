@@ -7,6 +7,7 @@
 # 4. Crear un método que incrementa todos los elementos en una unidad y devuelva
 # un arreglo nuevo.
 # rubocop:enable AsciiComments
+# rubocop:disable For
 
 def eliminar_pares(array)
   index = 0
@@ -34,6 +35,13 @@ def promedio(array)
   average
 end
 
+def incr_array(array)
+  for i in 0..array.length - 1 do
+    array[i] += 1
+  end
+  array
+end
+
 puts 'Arreglo sin modificar.'
 a = [1, 2, 3, 9, 1, 4, 5, 2, 3, 6, 6]
 print a
@@ -45,4 +53,9 @@ puts "\n2. Sumar todos los elementos de un arreglo."
 print sumar_elementos(a)
 puts "\n3. Obtener el promedio del arreglo"
 print promedio(a)
-puts "\n"
+puts "\n4. Crear nuevo array que este incrementado del anterior."
+b = incr_array(a)
+print b
+puts ''
+
+# rubocop:enable For

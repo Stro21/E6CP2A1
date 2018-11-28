@@ -9,13 +9,13 @@ Se tiene un arreglo de productos, se pide que el output sea:
 # rubocop:enable BlockComments
 
 products = %w[Producto1 Producto2 Producto3 Producto4]
-
-print products
-puts ''
 html = ''
-products.each do |i|
+i = 0
+products.each do
   html += "<div class='product'><p> "
-  html += "</p></div>\n"
+  html += products[i]
+  html += " </p></div>\n"
+  i += 1
 end
 
 puts html

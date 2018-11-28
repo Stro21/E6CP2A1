@@ -4,7 +4,8 @@
 # 2. Mostrar en pantalla el último elemento.
 # 3. Mostrar en pantalla todos los elementos.
 # 4. Mostrar en pantalla todos los elementos junto con un índice.
-# 5. Mostrar en pantalla todos los elementos que se encuentren en una posición par.
+# 5. Mostrar en pantalla todos los elementos que se encuentren en una posición
+# par.
 # rubocop:enable AsciiComments
 
 def print_array(array)
@@ -17,7 +18,7 @@ def print_array_with_index(array)
   puts 'Los elementos del arreglo son:'
   array.each do |item|
     puts 'Elemento número ' + index.to_s + ' es ' + item.to_s
-    index = index + 1
+    index += 1
   end
 end
 

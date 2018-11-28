@@ -7,7 +7,11 @@
 # rubocop:enable AsciiComments
 
 def esta_dentro(str1, str2)
-
+  if str1.include?(str2)
+    puts 'El caracter ' + str2 + ' esta incluido en el string cadena'
+  else
+    puts 'El caracter ' + str2 + ' no esta incluido en el string cadena'
+  end
 end
 
 cadena = 'Hola Mundo!'

@@ -5,9 +5,9 @@
 def check5(num)
   num > 5
 end
-
-for i in 0..1 do
-  if check5(5 + i)
+i = [0, 1]
+i.each do |item|
+  if check5(5 + item)
     puts 'Es verdadera'
   else
     puts 'Es falsa'

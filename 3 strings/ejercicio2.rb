@@ -7,3 +7,17 @@
 # que tiene cada nombre.
 # rubocop:enable AsciiComments
 # rubocop:enable LeadingCommentSpace
+# rubocop:disable For
+def caract5(nombres)
+  for i in 0..nombres.count - 1 do
+    puts nombres[i] if nombres[i].length > 5
+  end
+end
+
+puts 'Arreglo inicial'
+companeros = %w[Eduardo Francisco Tómas Nancy Miguel Enrique Jorge Fabian]
+print companeros
+puts "\n1. Imprimir elementos de más de 5 caracteres"
+caract5(companeros)
+
+# rubocop:enable For

@@ -22,6 +22,14 @@ def minuscula(nombres)
   array
 end
 
+def largo_nombre(nombres)
+  array = []
+  nombres.each do |nombre|
+    array.push(nombre.length)
+  end
+  array
+end
+
 puts 'Arreglo inicial'
 companeros = %w[Eduardo Francisco Tómas Nancy Miguel Enrique Jorge Fabian]
 print companeros
@@ -30,4 +38,7 @@ caract5(companeros)
 puts '2. Crear arreglo con caracters en minúscula'
 alumnos = minuscula(companeros)
 print alumnos
-puts "\n"
+puts "\n3. Devolver arreglo con cantidad de caracteres de cada nombre"
+largo = largo_nombre(companeros)
+print largo
+puts ''

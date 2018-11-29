@@ -7,10 +7,10 @@
 # que tiene cada nombre.
 # rubocop:enable AsciiComments
 # rubocop:enable LeadingCommentSpace
-# rubocop:disable For
+
 def caract5(nombres)
-  for i in 0..nombres.count - 1 do
-    puts nombres[i] if nombres[i].length > 5
+  nombres.each do |nombre|
+    puts nombre if nombre.length > 5
   end
 end
 
@@ -31,4 +31,3 @@ puts '2. Crear arreglo con caracters en minúscula'
 alumnos = minuscula(companeros)
 print alumnos
 puts "\n"
-# rubocop:enable For

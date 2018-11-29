@@ -14,10 +14,21 @@ def caract5(nombres)
   end
 end
 
+def minuscula(nombres)
+  array = []
+  nombres.each do |variable|
+    array.push(variable.downcase)
+  end
+  array
+end
+
 puts 'Arreglo inicial'
 companeros = %w[Eduardo Francisco Tómas Nancy Miguel Enrique Jorge Fabian]
 print companeros
 puts "\n1. Imprimir elementos de más de 5 caracteres"
 caract5(companeros)
-
+puts '2. Crear arreglo con caracters en minúscula'
+alumnos = minuscula(companeros)
+print alumnos
+puts "\n"
 # rubocop:enable For

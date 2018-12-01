@@ -12,15 +12,12 @@
 
 def concatenar(array1, array2)
   arr1 = []
-  arr2 = []
   i = 0
   array1.each do |item1|
-    arr1.push(item1)
-    arr1.push(array2[i])
-    arr2.push(arr1)
+    arr1.push([item1, array2[i]])
     i += 1
   end
-  arr2
+  arr1
 end
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']

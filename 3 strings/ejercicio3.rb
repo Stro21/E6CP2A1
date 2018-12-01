@@ -17,8 +17,12 @@ def concatenar(array1, array2)
   arr1.push(array2[0])
   print arr1
   puts ''
-  arr2.push(array1)
+  arr2.push(arr1)
+  print arr2
+  puts ''
 end
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
+
+concatenar(a, b)

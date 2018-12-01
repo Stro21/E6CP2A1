@@ -13,16 +13,22 @@
 def concatenar(array1, array2)
   arr1 = []
   arr2 = []
-  arr1.push(array1[0])
-  arr1.push(array2[0])
-  print arr1
-  puts ''
-  arr2.push(arr1)
-  print arr2
-  puts ''
+  i = 0
+  array1.each do |item1|
+    arr1.push(item1)
+    arr1.push(array2[i])
+    arr2.push(arr1)
+    i += 1
+  end
+  arr2
 end
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']
+print a
+puts ''
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
-
-concatenar(a, b)
+print b
+puts ''
+c = concatenar(a, b)
+print c
+puts ''

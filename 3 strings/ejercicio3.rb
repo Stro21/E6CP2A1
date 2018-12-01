@@ -20,6 +20,23 @@ def concatenar(array1, array2)
   arr1
 end
 
+def union(arr1, arr2)
+  arr = arr2
+  i = 1
+  arr1.each do |item1|
+    arr2.each do |item2|
+      if item1.to_s == item2.to_s
+        break
+      elsif i == arr1.length
+        arr.push(item1)
+      else
+        i += 1
+      end
+    end
+  end
+  arr
+end
+
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 print a
 puts ''
@@ -28,4 +45,7 @@ print b
 puts ''
 c = concatenar(a, b)
 print c
+puts ''
+d = union(a, b)
+print d
 puts ''

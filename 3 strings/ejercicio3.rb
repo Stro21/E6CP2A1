@@ -24,6 +24,10 @@ def union(arr1, arr2)
   arr1 | arr2
 end
 
+def interseccion(arr1, arr2)
+  arr1 & arr2
+end
+
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 print a
 puts ''
@@ -35,4 +39,7 @@ print c
 puts ''
 d = union(a, b)
 print d
+puts ''
+e = interseccion(a, b)
+print e
 puts ''

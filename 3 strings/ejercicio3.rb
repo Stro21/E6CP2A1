@@ -10,5 +10,15 @@
 # [9, "jueves"], [12, "viernes"], [31, "sábado"], ["domingo", "domingo"]]
 # rubocop:enable AsciiComments
 
+def concatenar(array1, array2)
+  arr1 = []
+  arr2 = []
+  arr1.push(array1[0])
+  arr1.push(array2[0])
+  print arr1
+  puts ''
+  arr2.push(array1)
+end
+
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
